@@ -1,0 +1,154 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+	width: 100%;
+	height: 500px;
+	background-color: #FFF;
+}
+.uitleg {
+	margin:0 auto;
+	width:80%;
+	text-align: center;
+	padding: 20px;
+	padding-top: 30px;
+}
+.lopen, .fietsen {
+	position: absolute;
+}
+
+.lopen img, .fietsen img {
+	width: 32px;
+	height: 32px;
+	padding-left: 50px;
+	margin-top: 25px;
+}
+
+.fietsen img {
+	padding-left: 175px;
+}
+
+.fietsen span {
+	margin-left: 215px;
+}
+
+.lopen span {
+	margin-left: 90px;
+}
+
+.fietsen span, .lopen span { top: 30px; position:absolute; }
+
+footer {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	bottom: 0;
+	background-color: #333;
+}
+
+section {
+	width: 20%;
+	position:absolute;
+}
+
+footer > p {
+	padding: 15px;
+	color: #FFF;
+	font-weight: 200;
+}
+
+#grafiek {
+	margin: 0 auto;
+	width: 50%;
+	height: 300px;
+
+	display: block;
+}
+
+.grafiek {
+	width: 100%;
+	height: 300px;
+
+}
+
+#grafiek2 {
+	height: 300px;
+	padding: 50px;
+	padding-top: 100px;
+}
+
+#grafiek2, #grafiek3, #grafiek4 {
+	float: left;
+	display: inline;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.datum {
+	position: absolute;
+	margin-left: 50px;
+	top: 20px;
+}
+
+.datum > label { font-weight: 800; }
+
+.bike {
+	width: 300px;
+	height: 100px;
+	position:absolute;
+	left: 50px;
+	top: 120px;
+}
+
+.walk {
+	width: 300px;
+	height: 100px;
+	left: 50px;
+	top: 60px;
+	position:absolute;
+}
+
+	.walk img { width: 32px; height: 32px;  margin-top: 5px; }
+	.bike img { width: 32px; height: 32px;  margin-top: 5px; }
+
+.bike > label, .walk > label { position: absolute; margin-left: 10px; font-weight: 800; }
+.bike > span, .walk > span { position: absolute; margin-left: 10px; margin-top: 20px; }
+
+.buttons {
+	position: absolute;
+	width: 500px;
+	height: 50px;
+	margin-top: 180px;
+	margin-left: 50px;
+}
+
+	#b1 { margin-left: 0px; font-weight: 800; }
+	#b2 { margin-left: 70px; font-weight: 800; }
+	#b3 { margin-left: 145px; font-weight: 800; }
+
+
+#b4, #b5, #b6, #b7 {
+	margin-top: 240px;
+	position: absolute;
+}
+	#b4 { margin-left: 225px; font-weight: 800; }
+	#b5 { margin-left: 625px; font-weight: 800; }
+	#b6 { margin-left: 1025px; font-weight: 800; }
+
+button {
+	padding: 10px;
+	margin-left: 50px;
+	position: absolute;
+}
+
+.row { width: 100%; height: 300px; border-bottom: 2px solid #DDD; }
+.row:first-child { border-top: 2px solid #DDD; }

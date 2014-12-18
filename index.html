@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D3 - Fit</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/d3.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="uitleg">
+				<h1> D3 - Programmeren </h1>
+				<p>In deze visualisaties zijn grafieken te zien die gebruik maken van een data (export) uit mijn applicatie <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">GoogleFit</a>.</p></br>
+				<h2>Visualisatie 1</h2>
+				<p>In de eerste staafgrafiek is de totale tijd aan lopen en fietsen te zien op basis van datum, met de mouseover is zo te zien wat precies de achterliggende data is. Er kan via de buttons ook gewisseld worden tussen totaal (fietsen + lopen), lopen en fietsen.</p></br>
+		</div>
+		<div id="container-1">
+			<section>
+				<div class="datum nodata">
+					<label>Datum:</label>
+					<span>D-M-Y</span>
+				</div>
+				<div class="bike">
+					<img src="img/fietsen-groen.png"/>
+					<label>Tijdsduur:</label>
+					<span># minuten</span>
+				</div>
+				<div class="walk">
+					<img src="img/lopen-groen.png"/>
+					<label>Tijdsduur:</label>
+					<span># minuten</span>
+				</div>
+			</section>
+			<div class="buttons">
+				<button id="b1" onClick="updateDataTotaal()">Totaal</button>
+				<button id="b2" onClick="updateDataLopen()">Lopen</button>
+				<button id="b3" onClick="updateDataFietsen()">Fietsen</button>
+			</div>
+
+			<div id="grafiek"></div>
+
+		</div>
+		<div class="uitleg">
+			<h2>Visualisatie 2</h2>
+			<p>In de volgende visualisatie zijn verschillende donut grafieken te zien die ieder een week representeren. In die week is de verhouding fietsen tot lopen van het totaal te zien.</p>
+		</div>
+
+		<div id="container-2">
+
+			<div class="lopen">
+				<label><img src="img/fietsen-oranje.png"/></label>
+				<span>Fietsen</span>
+			</div>
+			<div class="fietsen">
+				<label><img src="img/lopen-groen.png"/></label>
+				<span>Lopen</span>
+			</div>
+			<div id="grafiek2"></div>
+			
+			<div id="b4">Week 1</div>
+			<div id="b5">Week 2</div>
+			<div id="b6">Week 3</div>
+
+			
+		</div>
+	</div>
+	<footer><p>© 2014, Stef van Zon</p></footer>
+	<script type="text/javascript" src="js/d3.grafiek.js"></script>
+	<script type="text/javascript" src="js/d3.grafiek2.js"></script>
+	<script type="text/javascript" src="js/d3.grafiek3.js"></script>
+	<script type="text/javascript" src="js/d3.grafiek4.js"></script>
+	<script type="text/javascript" src="js/d3.grafiek5.js"></script>
+	<script>
+	graph1();
+	graph2();
+	graph3();
+	timeleft();
+	</script>
+</body>
+</html>
